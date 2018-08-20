@@ -12,12 +12,12 @@ necessary tools to test the accuracy of this classifier. It has around 93% accur
 in both the training and validation sets.
 
 This is a list of the features used:
-    - Mean, variance and standard deviation of each axis in both the accelerometre and the gyroscope
-    - Maximum and minimum value of each axis in both the accelerometre and the gyroscope
-    - The amount of zero crossing in each axis of both the accelerometre and the gyroscope
-    - Standard deviation of the mean values for each sensor
-    - Phase of the fast fourier transform of the sound
-    - Amplitude of the 3 highest peaks of the fft of the sound
+    Mean, variance and standard deviation of each axis in both the accelerometre and the gyroscope
+    Maximum and minimum value of each axis in both the accelerometre and the gyroscope
+    The amount of zero crossing in each axis of both the accelerometre and the gyroscope
+    Standard deviation of the mean values for each sensor
+    Phase of the fast fourier transform of the sound
+    Amplitude of the 3 highest peaks of the fft of the sound
 
 Another possible improvement could be making the data set bigger since it is most
 certainly over-fitted to the punches of just 4 individuals.
