@@ -1,6 +1,9 @@
 import numpy as np
 
-
+    #  This class segenments the sensor and sound data. If the punches are not being
+    #  detected, modifying the value of the threshold e.g. 9000 and 500 to a lower value
+    #  will work. However this value is already low enough to detect most of the
+    #  punches and ignore the noise.
 class segmentator():
     def soundSegment(self, dataSound):
         print(max(dataSound))
@@ -44,6 +47,3 @@ class segmentator():
                 included = x+200
         punch = (np.array(punch))
         return confirm, punch
-
-    def saveSegment():
-        pass

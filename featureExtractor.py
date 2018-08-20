@@ -2,7 +2,9 @@ import numpy as np
 from scipy.fftpack import rfft
 import peakutils
 
-
+# This class is in charge of extracting the features from the raw data from
+# both the sound and the sensors. It returns an array with all of these features
+# in it.
 class featureExtractor:
     def extract(self, x, sound):
         features = []
