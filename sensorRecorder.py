@@ -1,11 +1,10 @@
 import serial
-import numpy as np
-import matplotlib as plt
-from drawnow import *
 import time
 
 
 class sensorRecorder:
+    # This line of code is specific to each computer. In here, the port being
+    # used for the arduino must be specified.
     arduinoData = serial.Serial('/dev/serial/by-id/usb-1a86_USB2.0-Serial-if00-port0', 1000000)
 
     def record(self, recordTime):

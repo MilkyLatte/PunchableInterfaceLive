@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import csv
 import tensorflow as tf
 from featureExtractor import featureExtractor
@@ -57,10 +56,10 @@ class classifier:
         for x in range(len(self.sensorData)):
             features.append(featureExtraction.extract(featureExtraction, self.sensorData[x], self.soundData[x, 0:]))
         features = np.array(features)
-        training = features[:600]
+        training = features[0:]
         test = features[500:550]
         validation = features[550:]
-        training_labels = self.labels[:600]
+        training_labels = self.labels[0:]
         test_labels = self.labels[500:550]
         validaton_labels = self.labels[550:]
         train_dataset, train_labels = self.randomize(training, training_labels)
